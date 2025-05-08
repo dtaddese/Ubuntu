@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Nablix Air - Transforming Connectivity in Ethiopia&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>nablixPurple: '#461F76',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>nablixYellow: '#FDB727',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero-gradient {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #461F76 0%, rgba(70, 31, 118, 0.8) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.stat-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.stat-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-5px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.service-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.service-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-5px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.team-card:hover .team-overlay {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.team-overlay {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link:after {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>bottom: -2px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FDB727;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: width 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link:hover:after {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="font-sans antialiased"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Navigation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav class="bg-white shadow-md sticky top-0 z-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 py-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-10 h-10 rounded-full bg-gradient-to-r from-nablixPurple to-nablixYellow flex items-center justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-white font-bold text-xl"&gt;NA&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="ml-2 text-nablixPurple font-bold text-xl"&gt;Nablix Air&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="hidden md:flex items-center space-x-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#home" class="nav-link text-nablixPurple font-medium"&gt;Home&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#solution" class="nav-link text-nablixPurple font-medium"&gt;Solution&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#business" class="nav-link text-nablixPurple font-medium"&gt;Business Model&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#investment" class="nav-link text-nablixPurple font-medium"&gt;Investment&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#team" class="nav-link text-nablixPurple font-medium"&gt;Team&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#contact" class="bg-nablixPurple text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition"&gt;Contact Us&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="text-nablixPurple focus:outline-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="home" class="hero-gradient text-white py-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2 mb-10 md:mb-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6"&gt;Transforming Connectivity in Ethiopia&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xl mb-8"&gt;Partnering with EthioTelecom to deliver high-speed, affordable internet access to millions&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#investment" class="bg-nablixYellow text-nablixPurple px-6 py-3 rounded-md font-bold text-center hover:bg-opacity-90 transition"&gt;Invest With Us&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-md font-bold text-center hover:bg-white hover:text-nablixPurple transition"&gt;Learn More&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" alt="Network connectivity" class="rounded-lg shadow-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Stats Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="bg-gray-50 py-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="stat-card bg-white p-8 rounded-lg shadow-md text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixPurple text-5xl font-bold mb-2"&gt;20%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-gray-600"&gt;of Ethiopia's population has stable internet access&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="stat-card bg-white p-8 rounded-lg shadow-md text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixPurple text-5xl font-bold mb-2"&gt;2M+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-gray-600"&gt;subscribers waitlisted for broadband access&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="stat-card bg-white p-8 rounded-lg shadow-md text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixPurple text-5xl font-bold mb-2"&gt;$61.4M&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-gray-600"&gt;EthioTelecom co-investment commitment&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Problem Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-nablixPurple mb-4"&gt;The Connectivity Challenge&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-20 h-1 bg-nablixYellow mx-auto mb-6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 max-w-2xl mx-auto"&gt;Ethiopia faces significant barriers to digital inclusion that Nablix Air is uniquely positioned to solve&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 p-6 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-wifi"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;Limited Broadband Access&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;Only 20% of Ethiopia's population has access to stable internet, creating a massive digital divide.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 p-6 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-tachometer-alt"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;Slow Fiber Expansion&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;Existing fiber networks are costly and take years to deploy, unable to meet growing demand.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 p-6 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-users"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;High Unmet Demand&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;Over 2 million subscribers are waitlisted for broadband access via EthioTelecom.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Solution Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="solution" class="py-20 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-nablixPurple mb-4"&gt;Our Revolutionary Solution&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-20 h-1 bg-nablixYellow mx-auto mb-6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 max-w-2xl mx-auto"&gt;Nablix Air leverages Tarana's next-generation fixed wireless access (ngFWA) technology&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row items-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2 mb-10 md:mb-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" alt="Wireless technology" class="rounded-lg shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2 md:pl-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold text-nablixPurple mb-4"&gt;Fiber-Class Speeds Without the Fiber&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-6"&gt;Our ngFWA technology delivers high-speed internet comparable to fiber optic networks, but without the expensive infrastructure requirements.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-nablixYellow mr-3 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-gray-700"&gt;Fast deployment with scalable, cost-effective technology&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-nablixYellow mr-3 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-gray-700"&gt;Affordable pricing models for all market segments&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-nablixYellow mr-3 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-gray-700"&gt;Reliable connectivity even in challenging environments&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-bolt"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;Rapid Deployment&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;Our wireless solution can be deployed in weeks rather than the years required for fiber optic networks, allowing us to quickly serve underserved areas.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-dollar-sign"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;Cost Efficiency&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;With significantly lower infrastructure costs compared to fiber, we can offer affordable pricing while maintaining healthy margins.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Business Model Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="business" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-nablixPurple mb-4"&gt;Business Model &amp; Revenue Streams&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-20 h-1 bg-nablixYellow mx-auto mb-6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 max-w-2xl mx-auto"&gt;Multiple revenue streams designed for sustainable growth and profitability&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="service-card bg-gray-50 p-8 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-home"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;Residential Services&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-4"&gt;Affordable, high-speed internet packages tailored for households with flexible pricing options.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixPurple font-medium"&gt;Projected Contribution: 45%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="service-card bg-gray-50 p-8 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-building"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;Business Solutions&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-4"&gt;Premium connectivity packages for SMEs and corporations with guaranteed SLAs.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixPurple font-medium"&gt;Projected Contribution: 30%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="service-card bg-gray-50 p-8 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixYellow text-3xl mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-cloud"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold text-nablixPurple mb-2"&gt;Value-Added Services&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-4"&gt;IPTV, VoIP, cloud services, and smart home integrations that drive ARPU growth.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-nablixPurple font-medium"&gt;Projected Contribution: 25%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Investment Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="investment" class="py-20 bg-gradient-to-r from-nablixPurple to-purple-900 text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold mb-4"&gt;Investment Opportunity&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-20 h-1 bg-nablixYellow mx-auto mb-6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="max-w-2xl mx-auto"&gt;Join us in transforming Ethiopia's digital landscape with a high-growth, high-impact investment&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-6"&gt;Investment Highlights&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-nablixYellow mr-4 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-chart-line text-2xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-xl font-semibold mb-2"&gt;$10M Investment Ask&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;For network expansion, operations, and market growth initiatives.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-nablixYellow mr-4 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-handshake text-2xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-xl font-semibold mb-2"&gt;Strategic Partnership&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;EthioTelecom co-investment totaling $61.4M over 5 years.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-nablixYellow mr-4 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-coins text-2xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-xl font-semibold mb-2"&gt;Strong Projected ROI&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Sustainable profitability from Year 2 with high EBITDA margins.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-6"&gt;Why Invest in Nablix Air?&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-white bg-opacity-10 p-4 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-semibold text-nablixYellow"&gt;Untapped Market Potential&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;High demand, low competition, and strong growth potential in Africa's second most populous country.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-white bg-opacity-10 p-4 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-semibold text-nablixYellow"&gt;Proven Technology&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Tarana's ngFWA ensures reliability and scalability with deployments worldwide.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-white bg-opacity-10 p-4 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-semibold text-nablixYellow"&gt;Government Backing&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p&gt;Strong support from Ethiopian authorities and partnership with the national telecom provider.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-16 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="bg-nablixYellow text-nablixPurple px-8 py-4 rounded-md font-bold text-lg hover:bg-opacity-90 transition"&gt;Request Investor Package&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Team Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="team" class="py-20 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-nablixPurple mb-4"&gt;Meet Our Leadership Team&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-20 h-1 bg-nablixYellow mx-auto mb-6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 max-w-2xl mx-auto"&gt;Seasoned professionals with decades of combined experience in telecom and business growth&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="team-card relative rounded-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80" alt="CEO" class="w-full h-80 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="team-overlay absolute inset-0 bg-gradient-to-t from-nablixPurple to-transparent flex items-end p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-white text-2xl font-bold"&gt;John Doe&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-nablixYellow font-medium"&gt;Chief Executive Officer&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-white mt-2"&gt;20+ years in telecom &amp; business development across Africa and Middle East&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="team-card relative rounded-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80" alt="CTO" class="w-full h-80 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="team-overlay absolute inset-0 bg-gradient-to-t from-nablixPurple to-transparent flex items-end p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-white text-2xl font-bold"&gt;Jane Smith&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-nablixYellow font-medium"&gt;Chief Technology Officer&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-white mt-2"&gt;Expert in network infrastructure &amp; technology deployment with 15+ years experience&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="team-card relative rounded-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80" alt="Advisor" class="w-full h-80 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="team-overlay absolute inset-0 bg-gradient-to-t from-nablixPurple to-transparent flex items-end p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-white text-2xl font-bold"&gt;Michael Johnson&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-nablixYellow font-medium"&gt;Senior Advisor&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-white mt-2"&gt;25+ years in investment strategy &amp; telecom ventures across emerging markets&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CTA Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-20 bg-nablixYellow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-nablixPurple mb-6"&gt;Ready to Transform Ethiopia's Digital Future?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-xl text-nablixPurple mb-8 max-w-2xl mx-auto"&gt;Join us as an investor, partner, or customer in this groundbreaking connectivity initiative.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="bg-nablixPurple text-white px-8 py-3 rounded-md font-bold hover:bg-opacity-90 transition"&gt;Invest With Us&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="border-2 border-nablixPurple text-nablixPurple px-8 py-3 rounded-md font-bold hover:bg-white hover:bg-opacity-20 transition"&gt;Partner With Us&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Contact Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="py-20 bg-gray-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-nablixPurple mb-4"&gt;Get In Touch&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-20 h-1 bg-nablixYellow mx-auto mb-6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 max-w-2xl mx-auto"&gt;Contact us for investment opportunities, partnership inquiries, or customer support&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:flex"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:w-1/2 bg-nablixPurple text-white p-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl font-bold mb-6"&gt;Contact Information&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="text-nablixYellow mr-4 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fas fa-map-marker-alt"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h4 class="font-semibold"&gt;Address&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;Bole Road, Addis Ababa, Ethiopia&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="text-nablixYellow mr-4 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fas fa-envelope"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h4 class="font-semibold"&gt;Email&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;info@nablixair.et&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="text-nablixYellow mr-4 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fas fa-phone-alt"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h4 class="font-semibold"&gt;Phone&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p&gt;+251 123 456 789&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="mt-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-semibold mb-4"&gt;Follow Us&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex space-x-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="#" class="text-white hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="#" class="text-white hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="#" class="text-white hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fab fa-linkedin-in"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="#" class="text-white hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:w-1/2 p-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="name" class="block text-gray-700 font-medium mb-2"&gt;Full Name&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-nablixYellow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="email" class="block text-gray-700 font-medium mb-2"&gt;Email Address&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-nablixYellow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="subject" class="block text-gray-700 font-medium mb-2"&gt;Subject&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;select id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-nablixYellow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;option&gt;Investment Inquiry&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;option&gt;Partnership Opportunity&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;option&gt;Customer Support&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;option&gt;Other&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label for="message" class="block text-gray-700 font-medium mb-2"&gt;Message&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-nablixYellow"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button type="submit" class="w-full bg-nablixPurple text-white py-3 rounded-lg font-bold hover:bg-opacity-90 transition"&gt;Send Message&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-nablixPurple text-white py-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="mb-8 md:mb-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-10 h-10 rounded-full bg-gradient-to-r from-nablixPurple to-nablixYellow flex items-center justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-white font-bold text-xl"&gt;NA&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="ml-2 text-xl font-bold"&gt;Nablix Air&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="max-w-xs"&gt;Transforming connectivity in Ethiopia through innovative wireless technology.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-2 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-lg font-semibold mb-4"&gt;Company&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#home" class="hover:text-nablixYellow transition"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#solution" class="hover:text-nablixYellow transition"&gt;Solution&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#business" class="hover:text-nablixYellow transition"&gt;Business Model&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#investment" class="hover:text-nablixYellow transition"&gt;Investment&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-lg font-semibold mb-4"&gt;Resources&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#" class="hover:text-nablixYellow transition"&gt;Blog&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#" class="hover:text-nablixYellow transition"&gt;News&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#" class="hover:text-nablixYellow transition"&gt;Careers&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#" class="hover:text-nablixYellow transition"&gt;FAQ&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-lg font-semibold mb-4"&gt;Legal&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#" class="hover:text-nablixYellow transition"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#" class="hover:text-nablixYellow transition"&gt;Terms of Service&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;a href="#" class="hover:text-nablixYellow transition"&gt;Cookie Policy&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;© 2023 Nablix Air. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex space-x-6 mt-4 md:mt-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" class="hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" class="hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" class="hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fab fa-linkedin-in"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" class="hover:text-nablixYellow transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Simple smooth scrolling for navigation links</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>anchor.addEventListener('click', function (e) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>e.preventDefault();</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.querySelector(this.getAttribute('href')).scrollIntoView({</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>behavior: 'smooth'</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Mobile menu toggle functionality would go here</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// This is a placeholder for actual implementation</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenuButton = document.querySelector('.md\\:hidden button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>mobileMenuButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert('Mobile menu would open here in a full implementation');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
